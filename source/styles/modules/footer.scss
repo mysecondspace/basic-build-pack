@@ -1,0 +1,41 @@
+.footer {
+  background-color: $white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: em(25);
+  padding: 24px 0;
+
+  // block with social networks
+  .social {
+    margin-top: 20px;
+
+    a {
+      @include inline-block;
+      margin: 0 12.5px;
+
+      @include media(phone) {
+        margin: 0 3.5px;
+      }
+
+      &[href*='facebook'] {
+        @include sprite(facebook, social, hover);
+      }
+
+      &[href*='twitter'] {
+        @include sprite(twitter, social, hover);
+      }
+
+      &[href*='github'] {
+        @include sprite(github, social, hover);
+      }
+
+      &[href*='linkedin'] {
+        @include sprite(linkedin, social, hover);
+      }
+
+      &[href*='instagram'] {
+        @include sprite(instagram, social, hover);
+      }
+    }
+  }
+}

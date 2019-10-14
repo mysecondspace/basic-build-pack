@@ -1,0 +1,93 @@
+/**
+ * Welcome to your Workbox-powered service worker!
+ *
+ * You'll need to register this file in your web app and you should
+ * disable HTTP caching for this file too.
+ * See https://goo.gl/nhQhGp
+ *
+ * The rest of the code is auto-generated. Please don't update this file
+ * directly; instead, make changes to your Workbox build configuration
+ * and re-run your build process.
+ * See https://goo.gl/2aRDsh
+ */
+
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
+});
+
+/**
+ * The workboxSW.precacheAndRoute() method efficiently caches and responds to
+ * requests for URLs in the manifest.
+ * See https://goo.gl/S9QRab
+ */
+self.__precacheManifest = [
+  {
+    "url": "fonts/rubik-bold.ttf",
+    "revision": "b5b2632af1e2567e822e947f3c1f5b09"
+  },
+  {
+    "url": "fonts/rubik-light.ttf",
+    "revision": "79aa600424ded269e432988cb556d283"
+  },
+  {
+    "url": "fonts/rubik-regular.ttf",
+    "revision": "35af6dbe749b9704f03282e5a5949253"
+  },
+  {
+    "url": "images/close-2x.png",
+    "revision": "2a828187b5e437aea70c961d48397171"
+  },
+  {
+    "url": "images/close.png",
+    "revision": "03bc7cb4557eb1872402f25c75237cdf"
+  },
+  {
+    "url": "images/favicon.ico",
+    "revision": "11b203d2f84a8c1044db2f6aec2628b2"
+  },
+  {
+    "url": "images/logo-2x.png",
+    "revision": "b2b638f2391dabd4a95d6cab55833322"
+  },
+  {
+    "url": "images/logo.png",
+    "revision": "3fd570ea0d7b33fb15983d8c6a8c0858"
+  },
+  {
+    "url": "images/open-2x.png",
+    "revision": "9e1f57890e0e3cd0633804ade96af343"
+  },
+  {
+    "url": "images/open.png",
+    "revision": "776fce1a69c78e094b13ae675daa7d15"
+  },
+  {
+    "url": "images/social-2x.png",
+    "revision": "252e1f981e1ac8caf57b91fa86631fd1"
+  },
+  {
+    "url": "images/social.png",
+    "revision": "0e9c6aa1bbf1e7871d1b47f38e97a769"
+  },
+  {
+    "url": "index.html",
+    "revision": "80c8badbfb8dca0fac08f510f075caee"
+  },
+  {
+    "url": "scripts/main.min.js",
+    "revision": "7d3395c7568ea59acd4d8b592f756d6b"
+  },
+  {
+    "url": "styles/main.css",
+    "revision": "214a090fd74ae54c990e72024d43996c"
+  },
+  {
+    "url": "styles/main.min.css",
+    "revision": "86f9d23d218302f065e4006f0a963ba2"
+  }
+].concat(self.__precacheManifest || []);
+workbox.precaching.precacheAndRoute(self.__precacheManifest, {});

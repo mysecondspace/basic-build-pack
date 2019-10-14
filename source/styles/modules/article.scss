@@ -1,0 +1,11 @@
+.article {
+  border: 1px solid $border;
+  background-color: $secondary;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 24px 0;
+
+  h1 {
+    font-family: $bold;
+  }
+}

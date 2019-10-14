@@ -1,0 +1,95 @@
+.header {
+
+  // panel with logotype and menu
+  &__hood {
+    display: flex;
+    padding: 12px 0;
+
+    @include media(phone) {
+
+      // mobile menu burger button
+      &--button {
+        float: right;
+
+        .open {
+          @include image-retina('/../images/open.png', '/../images/open-2x.png');
+        }
+
+        .close {
+          @include image-retina('/../images/close.png', '/../images/close-2x.png');
+          display: none;
+        }
+      }
+    }
+
+    // logotype
+    &--logo {
+      float: left;
+      display: flex;
+      align-items: center;
+
+      .image {
+        @include image-retina('/../images/logo.png', '/../images/logo-2x.png');
+
+        + span {
+          font-family: $light;
+          margin-left: 15px;
+          color: $white;
+        }
+      }
+    }
+
+    // hood menu
+    &--menu {
+      float: right;
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      @include media(phone) {
+        width: 100%;
+        float: none;
+        display: none;
+        height: initial;
+        margin-top: 32px;
+        text-align: center;
+      }
+
+      li {
+        margin-left: 25px;
+
+        @include media(phone) {
+          padding-top: 10px;
+          margin-left: 0;
+          display: block;
+        }
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        a {
+          @include transition($time);
+          font-family: $light;
+          color: $white;
+          opacity: .75;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  // panel with bottom elements
+  &__cellar {
+    float: left;
+    width: 100%;
+    font-size: em(25);
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $secondary;
+    padding: 24px 0;
+  }
+}
