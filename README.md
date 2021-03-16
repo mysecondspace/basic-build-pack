@@ -15,7 +15,7 @@ All commands are carried out in some command prompt
 - `gulp`
 
 ### Requirements
-You must have installed the [Node.js](https://nodejs.org/en) (6.9.1) and [Ruby](https://www.ruby-lang.org/en/downloads/) (2.3.1) couple on your machine and also the [Compass Framework](http://compass-style.org/) (1.0.3)
+You must have installed the [Node.js](https://nodejs.org/en) (at least version 12.x) and [Ruby](https://www.ruby-lang.org/en/downloads/) couple on your machine and also the [Compass Framework](http://compass-style.org/)
 - `gem source -a http://rubygems.org`
 - `gem install compass`
 
