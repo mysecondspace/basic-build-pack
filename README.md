@@ -3,23 +3,29 @@ Feel free to use my template to create your project
 Demo: [mysecondspace.github.io/basic-build-pack/build](https://mysecondspace.github.io/basic-build-pack/build/)
 
 ## Install
+
 All commands are carried out in some command prompt
+
 - `git clone https://github.com/mysecondspace/basic-build-pack.git`
 - `cd basic-build-pack`
 - `npm install`
 - `bower install`
 
 ## Deploy
+
 - `cd basic-build-pack`
-- `gulp clean` *removes the build folder*
+- `gulp clean` _removes the build folder_
 - `gulp`
 
 ### Requirements
+
 You must have installed the [Node.js](https://nodejs.org/en) (at least version 12.x) and [Ruby](https://www.ruby-lang.org/en/downloads/) couple on your machine and also the [Compass Framework](http://compass-style.org/)
+
 - `gem source -a http://rubygems.org`
 - `gem install compass`
 
 ### Structure
+
 ```
 |-- source
     |-- data
@@ -61,6 +67,8 @@ You must have installed the [Node.js](https://nodejs.org/en) (at least version 1
         |-- components
             |-- scripts.js
         |-- main.js
+    |-- snippets
+        |-- head.html
     |-- styles
         |-- components
             |-- animate.scss
@@ -77,8 +85,8 @@ You must have installed the [Node.js](https://nodejs.org/en) (at least version 1
             |-- menu.scss
         |-- main.scss
     |-- templates
+        |-- article.html
         |-- footer.html
-        |-- head.html
         |-- header.html
         |-- menu.html
 index.html
