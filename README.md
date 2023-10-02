@@ -1,6 +1,6 @@
 Feel free to use my template to create your project
 
-Demo: [mysecondspace.github.io/basic-build-pack/build](https://mysecondspace.github.io/basic-build-pack/build/)
+⚡︎ Demo: [basic-build-pack](https://mysecondspace.github.io/basic-build-pack/build)
 
 ## Install
 
@@ -19,7 +19,7 @@ All commands are carried out in some command prompt
 
 ### Requirements
 
-You must have installed the [Node.js](https://nodejs.org/en) (at least version 12.x) and [Ruby](https://www.ruby-lang.org/en/downloads/) couple on your machine and also the [Compass Framework](http://compass-style.org/)
+You must have installed the [Node.js](https://nodejs.org/en) (at least version 12.x) and [Ruby](https://www.ruby-lang.org/en/downloads) couple on your machine and also the [Compass Framework](http://beta.compass-style.org)
 
 - `gem source -a http://rubygems.org`
 - `gem install compass`

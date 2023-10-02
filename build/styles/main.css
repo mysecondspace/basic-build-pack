@@ -273,6 +273,7 @@ html article {
   padding: 24px 0;
 }
 .article h1 {
+  font-weight: unset;
   font-family: "rubik bold";
 }
 
