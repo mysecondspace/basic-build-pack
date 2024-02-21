@@ -9,7 +9,7 @@
     "url": "https://gontarenko.pp.ua"
   },
   "dependencies": {
-    "browser-sync": "^2.29.3",
+    "browser-sync": "^3.0.2",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-base64": "^0.1.3",
